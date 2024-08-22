@@ -1,0 +1,25 @@
+{
+  "name": "api-app",
+  "version": "1.0.0",
+  "description": "Server-side API built with Node.js and Express.js",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "install": "npm install",
+    "run": "sh run.sh"
+  },
+  "keywords": ["api", "nodejs", "express"],
+  "author": "Your Name",
+  "license": "MIT",
+  "bin": {
+    "api-app": "app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "exports": {
+    "./controllers/messaging": "./controllers/messaging.js",
+    "./models/Message": "./models/message.js",
+    "./services/messagingService": "./services/messagingService.js"
+  }
+}
